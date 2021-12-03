@@ -17,10 +17,10 @@ resource "google_sql_database_instance" "postgres" {
   settings {
     tier = "db-f1-micro"
 
-    ip_configuration {
+    #ip_configuration {
       #ipv4_enabled    = false
       #private_network = data.google_compute_network.network.self_link
-    }
+    #}
   }
 }
 
